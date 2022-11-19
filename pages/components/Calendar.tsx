@@ -1,4 +1,3 @@
-import { Card } from "react-bootstrap";
 import styles from "./Calendar.module.css";
 import { formatGridTime, minutesToPixel } from "./../utils/helpers";
 import { useEvents } from "../utils/hooks";

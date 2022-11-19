@@ -20,8 +20,8 @@ const resolvers = {
         {
           id: 1,
           title: "Call with Bob",
-          start: 420,
-          end: 440,
+          start: 400,
+          end: 460,
         },
         {
           id: 2,
@@ -48,16 +48,34 @@ const resolvers = {
           end: 930,
         },
         {
-          id: 6,
-          title: "Review OKRs3",
+          id: 7,
+          title: "Interview Vejsil",
           start: 870,
-          end: 900,
+          end: 1000,
         },
         {
-          id: 7,
-          title: "Interview Ahmed3",
-          start: 870,
-          end: 930,
+          id: 71,
+          title: "Interview Someone",
+          start: 850,
+          end: 1000,
+        },
+        {
+          id: 8,
+          title: "Test 1",
+          start: 1070,
+          end: 1170,
+        },
+        {
+          id: 9,
+          title: "Test 2",
+          start: 1150,
+          end: 1200,
+        },
+        {
+          id: 10,
+          title: "Test 3",
+          start: 1300,
+          end: 1400,
         },
       ];
     },
