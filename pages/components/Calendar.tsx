@@ -6,7 +6,7 @@ import Event from "./Event";
 
 export default function Calendar({ events }) {
   const eventsInfo = useEvents(events);
-  console.log(eventsInfo);
+
   return (
     <div className={styles.wrapper}>
       {Array.from(Array(24).keys())

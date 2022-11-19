@@ -12,15 +12,21 @@ export default function Event({
   order,
   sameSlotEvents,
 }) {
-  console.log(width, sameSlotEvents);
+  const leftPos = `calc(${order * width}% + ${
+    order === 0 ? GRID_TIMESLOT_WIDTH : GRID_TIMESLOT_WIDTH / sameSlotEvents
+  }px)`;
+  const calculatedWidth = `calc(${width}% - ${
+    GRID_TIMESLOT_WIDTH / sameSlotEvents
+  }px)`;
+
   return (
     <Card
       className={styles.wrapper}
       style={{
-        width: `calc(${width}% - ${GRID_TIMESLOT_WIDTH}px)`,
+        width: calculatedWidth,
         height: `${height}px`,
         top: `${start}px`,
-        left: `calc(${order * width}% + ${GRID_TIMESLOT_WIDTH}px)`,
+        left: leftPos,
       }}
     >
       <Card.Body className={styles.body}>
