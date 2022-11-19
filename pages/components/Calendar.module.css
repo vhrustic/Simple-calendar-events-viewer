@@ -1,0 +1,29 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.eventRow {
+    display: flex;
+    align-items: flex-start;
+    height: 50px;
+    width: 100%;
+}
+
+.timeLabel {
+    position: relative;
+    bottom: 8px;
+    line-height: 16px;
+    font-size: 12px;
+    width: 50px;
+    min-width: 50px;
+    text-align: center;
+}
+
+.eventHolder {
+    height: 100%;
+    border-top: 1px solid var(--bs-gray-500);
+    border-left: 1px solid var(--bs-gray-500);
+    width: 100%;
+}

@@ -1,0 +1,21 @@
+.wrapper {
+    position: absolute;
+    background-color: var(--bs-blue);
+    color: var(--bs-white);
+    opacity: 0.5;
+}
+
+.body {
+    padding: 4px;
+}
+
+.time {
+    display: block;
+    font-size: 12px;
+}
+
+.title {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+}

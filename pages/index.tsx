@@ -1,5 +1,7 @@
 import useSWR from "swr";
 import 'bootstrap/dist/css/bootstrap.css'; // Add this line
+import Event from "./components/Event";
+import Calendar from "./components/Calendar";
 
 const fetcher = (query: string) =>
   fetch("/api/graphql", {
@@ -25,15 +27,7 @@ export default function Index() {
 
   return (
     <div>
-      {events.map((event) => (
-        <>
-          <div>{event.title}</div>
-          <div>
-            {event.start} - {event.end}
-          </div>
-          <hr />
-        </>
-      ))}
+      <Calendar events={events} />
     </div>
   );
 }
