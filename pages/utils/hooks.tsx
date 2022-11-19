@@ -5,7 +5,6 @@ export function useEvents(events) {
 
   useEffect(() => {
     if (events.length) {
-      // make deep copy
       const eventsCopy = [...events].map((ev) => ({ ...ev }));
 
       for (let i = 0; i < events.length; ++i) {
