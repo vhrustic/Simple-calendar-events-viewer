@@ -12,7 +12,7 @@ export default function Calendar({ events }) {
       {Array.from(Array(24).keys())
         .slice(0)
         .map((timeSlot, i) => (
-          <div className={styles.eventRow}>
+          <div key={i} className={styles.eventRow}>
             <span className={styles.timeLabel}>
               {i !== 0 && formatGridTime(timeSlot)}
             </span>

@@ -47,6 +47,18 @@ const resolvers = {
           start: 870,
           end: 930,
         },
+        {
+          id: 6,
+          title: "Review OKRs3",
+          start: 870,
+          end: 900,
+        },
+        {
+          id: 7,
+          title: "Interview Ahmed3",
+          start: 870,
+          end: 930,
+        },
       ];
     },
   },

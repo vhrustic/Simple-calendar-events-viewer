@@ -12,12 +12,11 @@ export default function Event({
   order,
   sameSlotEvents,
 }) {
-  const leftPos = `calc(${order * width}% + ${
-    order === 0 ? GRID_TIMESLOT_WIDTH : GRID_TIMESLOT_WIDTH / sameSlotEvents
-  }px)`;
-  const calculatedWidth = `calc(${width}% - ${
-    GRID_TIMESLOT_WIDTH / sameSlotEvents
-  }px)`;
+  const widthStr = `${width}% - ${GRID_TIMESLOT_WIDTH / sameSlotEvents}px`;
+  console.log(widthStr);
+  const calculatedWidth = `calc(${widthStr})`;
+
+  const leftPos = `calc(${order} * (${widthStr}) + ${GRID_TIMESLOT_WIDTH}px)`;
 
   return (
     <Card
