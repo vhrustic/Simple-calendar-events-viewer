@@ -37,7 +37,7 @@ export default function Event({
       }}
     >
       <Card.Body className={styles.body}>
-        <span className={styles.time}>{formatStartTime(time)}</span>
+        <span className={styles.time} data-testid="event-time">{formatStartTime(time)}</span>
         <span className={styles.title}>{title}</span>
       </Card.Body>
     </Card>
