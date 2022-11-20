@@ -1,7 +1,13 @@
 import { useEffect, useState } from "react";
+import { EventData } from "..";
+
+interface EventInfo extends EventData {
+  sameSlotEvents: number;
+  order: number;
+}
 
 export function useEvents(events) {
-  const [eventsInfo, setEventsInfo] = useState([]);
+  const [eventsInfo, setEventsInfo] = useState<EventInfo[]>([]);
 
   useEffect(() => {
     if (events.length) {

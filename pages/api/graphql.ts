@@ -60,16 +60,16 @@ const resolvers = {
           end: 1000,
         },
         {
-          id: 8,
-          title: "Test 1",
-          start: 1070,
-          end: 1170,
-        },
-        {
           id: 9,
           title: "Test 2",
           start: 1150,
           end: 1200,
+        },
+        {
+          id: 8,
+          title: "Test 1",
+          start: 1070,
+          end: 1170,
         },
         {
           id: 10,

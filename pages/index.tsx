@@ -1,7 +1,18 @@
 import useSWR from "swr";
 import 'bootstrap/dist/css/bootstrap.css'; // Add this line
-import Event from "./components/Event";
+import EventData from "./components/Event";
 import Calendar from "./components/Calendar";
+
+export interface EventData {
+  id: number;
+  title: string;
+  start: number;
+  end: number;
+}
+
+interface ApiData {
+  events: EventData[];
+}
 
 const fetcher = (query: string) =>
   fetch("/api/graphql", {
@@ -23,7 +34,7 @@ export default function Index() {
   if (error) return <div>Failed to load</div>;
   if (!data) return <div>Loading...</div>;
 
-  const { events } = data;
+  const { events }: ApiData = data;
 
   return (
     <div>

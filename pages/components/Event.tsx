@@ -3,6 +3,16 @@ import styles from "./Event.module.css";
 import { formatStartTime } from "./../utils/helpers";
 import { GRID_TIMESLOT_WIDTH } from "../utils/constants";
 
+interface Props {
+  time: number;
+  title: string;
+  start: number;
+  width: number;
+  height: number;
+  order: number;
+  sameSlotEvents: number;
+}
+
 export default function Event({
   time,
   title,
@@ -11,7 +21,7 @@ export default function Event({
   height,
   order,
   sameSlotEvents,
-}) {
+}: Props) {
   const widthStr = `${width}% - ${GRID_TIMESLOT_WIDTH / sameSlotEvents}px`;
   const calculatedWidth = `calc(${widthStr})`;
   const leftPos = `calc(${order} * (${widthStr}) + ${GRID_TIMESLOT_WIDTH}px)`;
