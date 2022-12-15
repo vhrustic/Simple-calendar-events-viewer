@@ -10,4 +10,4 @@ Testing is done using React-testing-library. To run the test execute the command
 
 ## About solution
 
-!(image)[https://i.imgur.com/Ivi0m69.png]
+![image](https://user-images.githubusercontent.com/11337933/207912001-cdd14a76-888b-4768-b0fb-126324b00ef4.png)
